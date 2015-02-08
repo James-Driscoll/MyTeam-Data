@@ -11,5 +11,6 @@
     [StartDate] DATE NULL, 
     [EndDate] DATE NULL, 
     [Duration] INT NULL,
+	CONSTRAINT [FK_AssignedTo] FOREIGN KEY ([FK_AssignedTo]) REFERENCES [dbo].[User]([Id]),
 	CONSTRAINT [FK_Project] FOREIGN KEY ([FK_Project]) REFERENCES [dbo].[Project]([Id]) ON DELETE CASCADE 
 )

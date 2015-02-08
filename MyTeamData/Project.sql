@@ -8,5 +8,6 @@
     [PercentageCompleted] INT NULL, 
     [StartDate] DATE NULL, 
     [EndDate] DATE NULL, 
-    [Duration] INT NULL
+    [Duration] INT NULL,
+	CONSTRAINT [FK_Team] FOREIGN KEY ([FK_Team]) REFERENCES [dbo].[Team]([Id])
 )

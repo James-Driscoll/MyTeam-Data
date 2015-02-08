@@ -5,5 +5,6 @@
     [FK_Task] INT NOT NULL, 
     [Mark] INT NULL, 
     [Comments] NVARCHAR(MAX) NULL, 
-    CONSTRAINT [FK_Task] FOREIGN KEY ([FK_Task]) REFERENCES [dbo].[WorkTask]([Id]) ON DELETE CASCADE 
+    CONSTRAINT [FK_Task] FOREIGN KEY ([FK_Task]) REFERENCES [dbo].[WorkTask]([Id]) ON DELETE CASCADE,
+	CONSTRAINT [FK_Assessor] FOREIGN KEY ([FK_Assessor]) REFERENCES [dbo].[User]([Id])
 )
