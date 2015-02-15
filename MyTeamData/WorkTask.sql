@@ -1,16 +1,16 @@
 ﻿CREATE TABLE [dbo].[WorkTask]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[PK_WorkTaskID] INT NOT NULL PRIMARY KEY, 
 	[FK_AssignedTo] INT NOT NULL,
 	[FK_Project] INT NOT NULL,
-    [Title] NVARCHAR(50) NULL, 
+    [Title] NVARCHAR(MAX) NOT NULL, 
     [Description] NVARCHAR(MAX) NULL, 
-    [Status] NVARCHAR(50) NULL, 
+    [Status] NVARCHAR(50) NOT NULL, 
     [PercentageCompleted] INT NULL, 
     [EstimatedDuration] INT NULL, 
-    [StartDate] DATE NULL, 
+    [StartDate] DATE NOT NULL, 
     [EndDate] DATE NULL, 
     [Duration] INT NULL,
-	CONSTRAINT [FK_AssignedTo] FOREIGN KEY ([FK_AssignedTo]) REFERENCES [dbo].[User]([Id]),
-	CONSTRAINT [FK_Project] FOREIGN KEY ([FK_Project]) REFERENCES [dbo].[Project]([Id]) ON DELETE CASCADE 
+	CONSTRAINT [FK_AssignedTo] FOREIGN KEY ([FK_AssignedTo]) REFERENCES [dbo].[User]([PK_UserID]),
+	CONSTRAINT [FK_Project] FOREIGN KEY ([FK_Project]) REFERENCES [dbo].[Project]([PK_ProjectID]) ON DELETE CASCADE 
 )
