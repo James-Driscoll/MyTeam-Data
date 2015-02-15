@@ -9,5 +9,5 @@
     [StartDate] DATE NOT NULL, 
     [EndDate] DATE NULL, 
     [Duration] INT NULL,
-	CONSTRAINT [FK_Team] FOREIGN KEY ([FK_Team]) REFERENCES [dbo].[Team]([Id])
+	CONSTRAINT [C_Team] FOREIGN KEY ([FK_Team]) REFERENCES [dbo].[Team]([Id])
 )
