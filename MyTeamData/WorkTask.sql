@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[WorkTask]
 (
-	[PK_WorkTaskID] INT NOT NULL PRIMARY KEY, 
+	[PK_WorkTaskID] INT NOT NULL PRIMARY KEY IDENTITY, 
 	[FK_AssignedTo] INT NOT NULL,
 	[FK_Project] INT NOT NULL,
     [Title] NVARCHAR(MAX) NOT NULL, 
