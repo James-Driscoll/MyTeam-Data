@@ -1,7 +1,8 @@
 ﻿CREATE TABLE [dbo].[Team]
 (
 	[PK_TeamID] INT NOT NULL PRIMARY KEY IDENTITY, 
-    [FK_Member1] INT NULL,
+    [Name] NVARCHAR(50) NULL,
+	[FK_Member1] INT NULL,
 	[FK_Member2] INT NULL,
 	[FK_Member3] INT NULL,
 	[FK_Member4] INT NULL,
