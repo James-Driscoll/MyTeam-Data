@@ -1,10 +1,8 @@
 ﻿CREATE TABLE [dbo].[Evaluation]
 (
-	[PK_EvaluationID] INT NOT NULL PRIMARY KEY IDENTITY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [FK_Assessor] INT NOT NULL, 
     [FK_WorkTask] INT NOT NULL, 
     [Mark] INT NOT NULL, 
-    [Comments] NVARCHAR(MAX) NULL, 
-    CONSTRAINT [C_Assessor] FOREIGN KEY ([FK_Assessor]) REFERENCES [dbo].[User]([PK_UserID]),
-	CONSTRAINT [C_Task] FOREIGN KEY ([FK_WorkTask]) REFERENCES [dbo].[WorkTask]([PK_WorkTaskID])
+    [Comments] NVARCHAR(50) NULL
 )

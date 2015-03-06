@@ -56,4 +56,53 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="FK_WorkTask" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="314f5b8f-8c2f-465d-92aa-ef5db71214ff" ChangeDateTime="03/06/2015 00:26:28">
+    <Property Name="ElementName" Value="[dbo].[Team].[FK_Member1]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Team]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Team" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="473015d8-4223-4bce-af25-cb819e5dc8a0" ChangeDateTime="03/06/2015 00:26:36">
+    <Property Name="ElementName" Value="[dbo].[Team].[Team]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Team]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FK_Team" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="da09e993-5ed7-4bac-a444-0685b7db0250" ChangeDateTime="03/06/2015 00:26:41">
+    <Property Name="ElementName" Value="[dbo].[Team].[Member]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Team]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FK_Member" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a4f60fae-9ead-406b-bdd6-c6cf4f5fdedd" ChangeDateTime="03/06/2015 00:26:46">
+    <Property Name="ElementName" Value="[dbo].[Team].[PK_TeamID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Team]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bc4c90b4-3583-4144-af65-95de2065f0b9" ChangeDateTime="03/06/2015 00:30:32">
+    <Property Name="ElementName" Value="[dbo].[WorkTask].[PK_WorkTaskID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[WorkTask]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8e9b5211-26b7-4ac6-a573-9ea8c3483231" ChangeDateTime="03/06/2015 00:32:29">
+    <Property Name="ElementName" Value="[dbo].[Project].[PK_ProjectID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Project]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="34c1cef0-7c13-4118-bb32-945a0c067bc7" ChangeDateTime="03/06/2015 00:33:17">
+    <Property Name="ElementName" Value="[dbo].[Evaluation].[PK_EvaluationID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Evaluation]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Id" />
+  </Operation>
 </Operations>
