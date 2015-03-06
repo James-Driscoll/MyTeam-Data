@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Evaluation]
+﻿CREATE TABLE [dbo].[Evaluations]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [FK_Assessor] INT NOT NULL, 
